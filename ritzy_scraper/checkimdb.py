@@ -3,7 +3,7 @@
 
 # In[1]:
 
-import sendgrid
+import sendgrid 
 import os
 from sendgrid.helpers.mail import *
 import smtplib
@@ -47,10 +47,10 @@ def imdb_movie_generator(imdb, movie_names):
                     
                     
 def send_email(movies):
-    gmail_user = "jaspervanderkort@gmail.com"
-    gmail_pwd = "3ghagt1m3"
-    FROM = "jaspervanderkort@gmail.com"
-    TO = ["ollyvanderkort@gmail.com", "reuben.thorpe.work@gmail.com"]
+    gmail_user = "example@gmail.com"
+    gmail_pwd = "examplepassword"
+    FROM = "noreplyexample@gmail.com"
+    TO = ["example@gmail.com"]
     SUBJECT = "Highly rated movies of the day"
     TEXT = "High rated today:\n\n"
     for movie in movies:
